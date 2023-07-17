@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 199.29 82.44" >
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: .03em;
+      }
+
+      .cls-2 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-3 {
+        letter-spacing: 0em;
+      }
+
+      .cls-4 {
+        letter-spacing: .03em;
+      }
+
+      .cls-5 {
+        letter-spacing: 0em;
+      }
+
+      .cls-6 {
+        fill: #231f20;
+        font-family: RalewayRoman-Regular, Raleway;
+        font-size: 36.19px;
+        font-variation-settings: 'wght' 400;
+      }
+
+      .cls-7 {
+        letter-spacing: 0em;
+      }
+
+      .cls-8 {
+        letter-spacing: 0em;
+      }
+    </style>
+  </defs>
+  <text class="cls-6" transform="translate(0 30.94) scale(.87 1)"><tspan class="cls-1" x="0" y="0">MARI</tspan><tspan class="cls-3" x="93.44" y="0">A</tspan><tspan class="cls-4" x="0" y="43.43">KUREN</tspan><tspan class="cls-8" x="129.99" y="43.43">K</tspan><tspan class="cls-7" x="153.01" y="43.43">O</tspan><tspan class="cls-2" x="180.37" y="43.43">V</tspan><tspan class="cls-5" x="203.96" y="43.43">A</tspan></text>
+</svg>

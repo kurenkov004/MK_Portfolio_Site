@@ -1,0 +1,318 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/* 
+Colors used:
+
+Background color (Pale Blue): #e9eef2;
+Text color (Dark Gray): #2b2b2b;
+PrimaryColor (Dark Teal): #566d6e;
+Secondary Color (Dark Orange): #603B2F; */
+
+body {
+    background-color: #e5eef2;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+a {
+    color: #566d6e;
+}
+
+a:visited {
+    /* visited link */
+    color: #603b2f;
+}
+
+a:hover, a:focus {
+  /* No underlining when hovering over a link */
+    text-decoration: none;
+}
+
+a:active {
+    /* selected link */
+    color: #44543f;
+}
+
+button {
+    border: none;
+    display: inline-block;
+    font-family: inherit;
+    background-color: #566d6e;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 3px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    -webkit-transition-duration: 0.2s;
+         -o-transition-duration: 0.2s;
+            transition-duration: 0.2s;
+    -webkit-transition-property: opacity;
+    -o-transition-property: opacity;
+    transition-property: opacity;
+}
+
+.button {
+    border: none;
+    display: inline-block;
+    font-family: inherit;
+    background-color: #566d6e;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 3px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    -webkit-transition-duration: 0.2s;
+         -o-transition-duration: 0.2s;
+            transition-duration: 0.2s;
+    -webkit-transition-property: opacity;
+    -o-transition-property: opacity;
+    transition-property: opacity;
+}
+
+button:hover, button:focus,
+.button:hover, .button:focus {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.profile__portrait {
+    float: left;
+    width: 250px;
+    margin-right: 40px;
+    border-radius: 50%;
+}
+
+.page-footer {
+    clear: both;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+}
+
+.profile {
+    max-width: 700px;
+    margin: auto;
+}
+
+#footer-label {
+    font-weight: 700;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.page-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    border-bottom: 1.5px solid rgb(175, 175, 175);
+}
+
+.page-header__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 200px;
+            flex: 0 1 200px;
+}
+
+.page-header .page-header__item:last-child {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    text-align: right;
+}
+
+.page-header__item:first-child {
+    width: 200px;
+    height: 70px;
+}
+.navigation-list {
+    list-style-type: none;
+}
+
+.navigation-list li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.navigation-list__item {
+    text-decoration: none;
+}
+
+.grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.grid__item {
+    background-color: #d3d3d3;
+    padding: 10px;
+}
+.grid__item:last-child {
+    -ms-grid-column: 3;
+        grid-column-start: 3;
+    -ms-grid-column-span: 0;
+    grid-column-end: 3;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    -ms-grid-row-span: 2;
+    grid-row-end: 3;
+}
+@media all and (max-width: 500px) {
+    .grid {
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;;
+    }
+}
+
+@media all and (min-width: 500px) and (max-width: 750px) {
+    .grid {
+        -ms-grid-columns: 1fr 20px 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media all and (max-width: 750px) {
+    .grid {
+        grid-gap: 10px;
+    }
+    .grid__item:last-child {
+        grid-column: auto / auto;
+        grid-row: auto / auto;
+    }
+    h1 {
+        font-size: 22px;
+    }
+}
+
+.about-info {
+    text-align: center;
+}
+
+.about-info-list {
+    text-align: center;
+    list-style: none;
+    padding: 0;
+}
+
+
+svg * {
+    transform-box: fill-box;
+}
+
+.navigation-list a {
+    position: relative;
+}
+
+a.navigation-list__item::before
+{
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0px;
+    top: 0px;
+    content: '';
+    background: #566d6e;
+    opacity: 0.3;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+
+}
+a.navigation-list__item:hover::before
+{
+    height: 100%;
+}
+
+#OBJECTS {
+    display: block;
+    margin: auto;
+    width: 50%;
+    height: 50%;
+}
+
+@-webkit-keyframes atmo-move-left {
+    from {
+        -webkit-transform: translate(0, 11.81px);
+                transform: translate(0, 11.81px);
+    }
+    to {
+        -webkit-transform: translate(-100px, 11.81px);
+                transform: translate(-100px, 11.81px);
+    }
+}
+
+@keyframes atmo-move-left {
+    from {
+        -webkit-transform: translate(0, 11.81px);
+                transform: translate(0, 11.81px);
+    }
+    to {
+        -webkit-transform: translate(-100px, 11.81px);
+                transform: translate(-100px, 11.81px);
+    }
+}
+
+#lines-group {
+    -webkit-animation: 30s atmo-move-left infinite alternate linear;
+            animation: 30s atmo-move-left infinite alternate linear;
+}
+
+
+@-webkit-keyframes star-rotate {
+    from{
+        -webkit-transform: rotate(720deg);
+                transform: rotate(720deg)
+    }
+}
+
+
+@keyframes star-rotate {
+    from{
+        -webkit-transform: rotate(720deg);
+                transform: rotate(720deg)
+    }
+}
+.star {
+    -webkit-animation: 20s star-rotate infinite alternate linear;
+            animation: 20s star-rotate infinite alternate linear;
+    -webkit-transform-origin: center;
+        -ms-transform-origin: center;
+            transform-origin: center;
+}
+
+
+
