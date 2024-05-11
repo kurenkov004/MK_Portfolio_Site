@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="img\MK_favicon.png">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.production.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/styles.css"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
@@ -15,7 +16,7 @@
 
 <body>
     <header class="page-header">
-        <img src="img/MK_Logo_var2_230709.svg" alt="logo" class="page-header__item">
+        <a href="index.html"><img src="img/MK_Logo_var2_230709.svg" alt="logo" class="page-header__item"></a>
         <nav class="main-navigation page-header__item">
             <ul role="menubar" class="navigation-list">
                 <li role="presentation">
@@ -33,25 +34,34 @@
             </ul>
         </nav>    
     </header>
-    <div>
-        <h1>CONTACT</h1>
-        <div>
-           <!--This will be a button --> 
-           <a href="mailto:mary.kurenkov@gmail.com">CONTACT ME</a>
+    <div class="contact-container">
+        <h1>CONTACT ME</h1>
+
+        <div class="contact-form-container">
+            <form action=" " method="post" id="contact-form">
+
+                <label class="standard-label" for="contact-fname">First Name: </label>
+                <input type="text" id="contact-fname" placeholder="Your name" required>
+
+                <label class="standard-label" for="contact-lname">Last Name: </label>
+                <input type="text" id="contact-lname" placeholder="Your last name" required>
+
+                <label class="standard-label" for="contact-email">E-mail: </label>
+                <input type="email" id="contact-email" placeholder="Your email" required>
+
+                <!-- <label class="standard-label" for="contact-tel">Telephone:</label>
+                <input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" id="contact-tel" placeholder="Your number"> -->
+
+                <label class="standard-label" for="contact-message">Message: </label>
+                <textarea name="" id="contact-message" cols="30" rows="10" maxlength="240" placeholder="Type message here" required></textarea>
+
+                <input type="submit" value="Send message">
+            </form>
         </div>
-
-        <form action=" " method="post" id="contact-form">
-            <label class="standard-label" for="contact-email">E-mail: </label>
-            <input type="email" id="contact-email" required>
-
-            <label class="standard-label" for="contact-tel">Telephone:</label>
-            <input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" id="contact-tel">
-
-            <label class="standard-label" for="contact-message">Message: </label>
-            <textarea name="" id="contact-message" cols="30" rows="10" maxlength="240" required></textarea>
-            <input type="submit" value="Send message">
-        </form>
-        <div>
+        <div> 
+            <a href="mailto:mary.kurenkov@gmail.com" class="button">CONTACT ME</a>
+         </div>
+        <!-- <div>
             Maria Kurenkova <br>
             69 Frankfort St, Apt 4 <br>
             Boston MA 02128 <br>
@@ -60,17 +70,18 @@
             Tel <a href="tel:+1 978 495 0928">+1 978 495 0928</a> <br>
             Skype <a href="skype:live:1da5762e7b842537">Masha Kurenkov</a> <br>
             Email <a href="mailto:masha.kurenkov@gmail.com">masha.kurenkov@gmail.com</a>
-        </div>
+        </div> -->
     </div>
+
     <footer class="page-footer">
         <p id="footer-label">Find me on</p>
         <div class="social-media">
-        <!--Github Icon-->
-        <img src="img/764894_github_media_social_square_icon.svg" alt="Github logo">
-        <!--Twitter Icon-->
-        <img src="img/5282551_tweet_twitter_twitter logo_icon.svg" alt="Twitter logo">
-        <!--LinkedIn Icon-->
-        <img src="img/5305157_connection_linkedin_network_linkedin logo_icon.svg" alt="LinkedIn logo">
+            <!--Github Icon-->
+            <a href="https://github.com/kurenkov004" target="_blank"><img src="img/764894_github_media_social_square_icon.svg" alt="Github logo"></a>
+            <!--Instagram Icon-->
+            <a href="https://www.instagram.com/maria__kurenkova/" target="_blank"><img src="img/2553090_camera_feed_instagram_media_news_icon.svg" alt="Instagram logo"></a>
+            <!--LinkedIn Icon-->
+            <a href="https://www.linkedin.com/in/masha-kurenkov-90b75013a/" target="_blank"><img src="img/5305157_connection_linkedin_network_linkedin logo_icon.svg" alt="LinkedIn logo"></a>
         </div>
     </footer>
 

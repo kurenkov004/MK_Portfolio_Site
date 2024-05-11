@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="img\MK_favicon.png">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.production.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/styles.css"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
@@ -15,7 +16,7 @@
 
 <body>
     <header class="page-header">
-        <img src="img/MK_Logo_var2_230709.svg" alt="logo" class="page-header__item">
+        <a href="index.html"><img src="img/MK_Logo_var2_230709.svg" alt="logo" class="page-header__item"></a>
         <nav class="main-navigation page-header__item">
             <ul role="menubar" class="navigation-list pullDown">
                 <li role="presentation">
@@ -33,17 +34,19 @@
             </ul>
         </nav>    
     </header>
-    <div class="about-info">
+    <div class="about-info-component">
         <h1>ABOUT</h1>
-        <p>This is a page about me - here is what I enjoy doing:</p>
-        <ul class="about-info-list">
-            <li>Full Stack Web Development</li>
-            <li>Portrait Drawing</li>
-            <li>Digital Painting</li>
-            <li>Muay Thai</li>
-        </ul>
-    
-        <a href="files/cv.pdf" class="button"  target="_blank" download>Download my CV</a>
+        <div class="about-info-container">
+          <h3>This is a page about me - here is what I enjoy doing:</h3>
+          <ul class="about-info-list">
+              <li>Full Stack Web Development</li>
+              <li>Portrait Drawing</li>
+              <li>Digital Painting</li>
+              <li>Muay Thai</li>
+          </ul>
+          <a href="files/MKurenkov_resume2024_v2.pdf" class="button cv-button"  target="_blank" download>Download my CV</a>
+        </div>
+
        <!--<img src="img/moscow_svg.svg" alt="Moscow Illustration">-->
 
     </div>
@@ -156,16 +159,18 @@
           <line class="cls-2" x1="136.17" y1="118.07" x2="139.93" y2="118.07"/>
         </g>
       </svg>
+      
+      <a href="#" id="bot-redirect">Back to top</a>
     <footer class="page-footer">
         <p id="footer-label">Find me on</p>
         <div class="social-media">
-        <!--Github Icon-->
-        <img src="img/764894_github_media_social_square_icon.svg" alt="Github logo">
-        <!--Twitter Icon-->
-        <img src="img/5282551_tweet_twitter_twitter logo_icon.svg" alt="Twitter logo">
-        <!--LinkedIn Icon-->
-        <img src="img/5305157_connection_linkedin_network_linkedin logo_icon.svg" alt="LinkedIn logo">
-        </div>
+          <!--Github Icon-->
+          <a href="https://github.com/kurenkov004" target="_blank"><img src="img/764894_github_media_social_square_icon.svg" alt="Github logo"></a>
+          <!--Instagram Icon-->
+          <a href="https://www.instagram.com/maria__kurenkova/" target="_blank"><img src="img/2553090_camera_feed_instagram_media_news_icon.svg" alt="Instagram logo"></a>
+          <!--LinkedIn Icon-->
+          <a href="https://www.linkedin.com/in/masha-kurenkov-90b75013a/" target="_blank"><img src="img/5305157_connection_linkedin_network_linkedin logo_icon.svg" alt="LinkedIn logo"></a>
+      </div>
     </footer>
     
     <script src="js/tota11y.min.js"></script>
