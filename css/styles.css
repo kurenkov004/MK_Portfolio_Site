@@ -165,7 +165,7 @@ button:hover, button:focus,
     grid-column-start: 3;
     grid-column-end: 3;
     grid-row-start: 1;
-    grid-row-end: 3;
+    grid-row-end: 1;
 }
 @media all and (max-width: 500px) {
     .grid {
@@ -271,9 +271,10 @@ a.navigation-list__item:hover::before
     transform-origin: center;
 }
 
-#meet-app-screenshot {
+#meet-app-screenshot, #forReel-react-screenshot, #forReel-API-screenshot, #pokedex-screenshot, #portfolio-site-screenshot, #forReel-Angular-screenshot {
     width: 100%;
     height: auto;
+    border-radius: .5%;
 }
 
 #page-heading {
@@ -325,3 +326,13 @@ input[type=submit] {
     resize: none;
   }
 
+.fuse-img-container {
+    display: flex;
+}
+#fuse-screenshot1, #fuse-screenshot2 {
+    flex: 50%;
+    padding: 5px;
+    width: 50%;
+    height: auto;
+    border-radius: .5%;
+}
