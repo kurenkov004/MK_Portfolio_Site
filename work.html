@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial scale=1.0">
-    <link rel="shortcut icon" href="img\MK_favicon.png">
+    <link rel="shortcut icon" href="img/favicon.ico">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.production.css">
     <!-- <link rel="stylesheet" type="text/css" href="css/styles.css"> -->
@@ -16,7 +16,7 @@
 
 <body>
     <header class="page-header">
-        <a href="index.html"><img src="img/MK_Logo_var2_230709.svg" alt="logo" class="page-header__item"></a>
+        <a href="index.html" style="width:15%;"><img src="img/MK_navbar_logo.png" alt="navbar-logo" id="navbar_logo"></a>
         <nav class="main-navigation page-header__item">
             <ul role="menubar" class="navigation-list">
                 <li role="presentation">
@@ -41,25 +41,61 @@
         <div class="grid">
             <div class="grid__item">
                 <h2>Career Foundry Portfolio Site</h2>
-                <p>A responsive website, built as a portfolio project for Career Foundry's Intro to Frontend Development Course.</p>
+                <img src="./img/MK_Portfolio_Screenshot1.jpg" alt="portfolio-site-screenshot" id="portfolio-site-screenshot">
+                <p>A responsive website, t completed for careerFoundry as the final assessment of their Intro to Frontend Development course. It's a responsive website made using HTML and CSS. It's linked to the most current projects completed for careerFoundry's Full-Stack Development Program.</p>
+                <h3>Technologies used:</h3>
+                <ul>
+                    <li>Git Repository hosted on gh-pages</li>
+                    <li>Autoprefixer for postprocessing</li>
+                    <li>Formspree for contact form submission</li>
+                </ul>
                 <a href="https://kurenkov004.github.io/MK_Portfolio_Site/index.html" class="button" target="_blank">Deployed Project</a>
                 <a href="https://github.com/kurenkov004/MK_Portfolio_Site" class="button" target="_blank">See project on Github</a>
             </div>
             <div class="grid__item">
                 <h2>Pokemon List App</h2>
-                <p>Small web application built with a combination of HTML, CSS and JavaScript. This was my first time using an API, as well as incorporating the Bootstrap library into the project.</p>
+                <img src="./img/Pokedex_Screenshot2.jpg" alt="Pokedex-app-screenshot" id="pokedex-screenshot">
+                <p>Small web application built with a combination of HTML, CSS and JavaScript. It was an exercise to practice using an external API and building modals which enable the user to see data points in detail.</p>
+                <h3>Technologies used:</h3>
+                <ul>
+                    <li>Bootstrap UI Framework</li>
+                    <li>JQuery: v 3.3.1 via CDN</li>
+                    <li>JSON formatter extension (https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa)</li>
+                </ul>
                 <a href="https://kurenkov004.github.io/MK-list-data-app/#" class="button" target="_blank">Deployed Project</a>
                 <a href="https://github.com/kurenkov004/MK-list-data-app" class="button" target="_blank">See project on Github</a>
             </div>    
             <div class="grid__item">
                 <h2>forReel API</h2>
-                <p>Project centered around building the server-side component of a "movies" web application. Users will be able to sign up, update their personal information, and create a list of their favorite movies. </p>
+                <img src="./img/MK_GET_allMovies_TestResult.jpg" alt="forReel-API-screenshot" id="forReel-API-screenshot">
+                <p>Server-side component of a "movies" web application. The application will provide users with access to information about different movies, directors, and genres. Users will be able to sign up, update their profile information and create a list of favorite movies. This server-side project provides a database to host the movie and user information, as well as an API to communicate with said database. </p>
+                <h3>Technologies used:</h3>
+                <ul>
+                    <li>Node.js environment</li>
+                    <li>Express framework</li>
+                    <li>MongoDB [&] Mongoose database [&] library</li>
+                    <li>Postman testing service</li>
+                    <li>body-parser</li>
+                    <li>jsonwebtoken library</li>
+                    <li>Passport, Passport-local</li>
+                    <li>uuid library</li>
+                </ul>
                 <a href="https://github.com/kurenkov004/movie_api" class="button" target="_blank">See project on Github</a>
             </div>
             <div class="grid__item">
                 <h2>forReel Client</h2>
+                <img src="./img/forReelReact_Screenshot2.jpg" alt="forReel-react-screenshot" id="forReel-react-screenshot">
                 <p>This is a single-page, responsive app which supports an existing server-side REST API and a MongoAtlas-hosted database. Both this app and the connected API were built as part of an exercise for the CareerFoundry Full Stack Development course, aimed to familiarize the student with the MERN tech stack.</p>
                 <p>The interface allows movie enthusiasts to create an account and browse through a collection of movies, finding out more information about each picture, as well as saving any particular favourites to their profile.</p>
+                <h3>Technologies used:</h3>
+                <ul>
+                    <li>React Library</li>
+                    <li>Bootstrap UI Framework</li>
+                    <li>Moments JS</li>
+                    <li>Parcel web app bundler</li>
+                    <li>Git Repository hosted on gh-pages</li>
+                    <li>Deployed site hosted on Netlify</li>
+                </ul>
                 <a href="https://for-reel.netlify.app/" class="button" target="_blank">Deployed Project</a>
                 <a href="https://github.com/kurenkov004/forReel-client" class="button" target="_blank">See project on Github</a>
             </div>
@@ -78,14 +114,44 @@
                 <a href="https://kurenkov004.github.io/meet/" class="button" target="_blank">Deployed Project</a>
                 <a href="https://github.com/kurenkov004/meet" class="button" target="_blank">See project on Github</a>
             </div>
-            <!-- <div class="grid__item">
-                <h2>Project #6</h2>
-                <p>Fusce ultrices leo porta sollicitudin iaculis. Aliquam convallis non dui molestie tristique.</p>
-                <a href="#">See project on Github</a>
-            </div> -->
+            <div class="grid__item">
+                <h2>fuse.</h2>
+                <div class="fuse-img-container">
+                    <img src="./img/Fuse_Screenshot1.jpg" alt="fuse-screenshot" id="fuse-screenshot1">
+                    <img src="./img/Fuse_Screenshot3.jpg" alt="fuse-screenshot" id="fuse-screenshot2">
+                </div>
+                <p>A project created for careerFoundry's Full Stack Web Development Course. It's a chat app for mobile devices made using React Native as the framework. The app will provide users with a chat interface and options to share images and their location</p>
+                <h3>Technologies used:</h3>
+                <ul>
+                    <li>React</li>
+                    <li>React Native</li>
+                    <li>Expo</li>
+                    <li>Google Firebase</li>
+                    <li>GiftedChat</li>
+                    <li>Android Studio</li>
+                </ul>
+                <a href="https://github.com/kurenkov004/fuse" class="button" target="_blank">See project on Github</a>
+            </div>
+            <div class="grid__item">
+                <h2>forReel Angular Client</h2>
+                <img src="./img/forReelAngular_Screenshot1.jpg" alt="forReel-Angular-screenshot" id="forReel-Angular-screenshot">
+                <p>The project objective was to use Angular and build the client-side component called forReel based on a previously built REST API and database. It's a single-page, responsive movie app with routing and several interface views.</p>
+                <h3>Technologies used:</h3>
+                <ul>
+                    <li>Angular</li>
+                    <li>Angular Material</li>
+                    <li>Angular Router</li>
+                    <li>rxjs</li>
+                    <li>tslib</li>
+                    <li>zone.js</li>
+                    <li>API at https://for-reel-d14227c07855.herokuapp.com/</li>
+                </ul>
+                <a href="https://forreel-angular.netlify.app/" class="button" target="_blank">Deployed Project</a>
+                <a href="https://github.com/kurenkov004/forReel-Angular-client" class="button" target="_blank">See project on Github</a>
+            </div>
         </div>
     </section>
-
+    <a href="#" id="bot-redirect">Back to top</a>
     <footer class="page-footer">
         <p id="footer-label">Find me on</p>
         <div class="social-media">
@@ -98,7 +164,7 @@
         </div>
     </footer>
 
-    <a href="#" id="bot-redirect">Back to top</a>
+
 
     <script src="js/tota11y.min.js"></script>
 
