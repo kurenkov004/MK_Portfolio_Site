@@ -11,44 +11,37 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Maria Kurenkova</title>
 </head>
 
-<body>
-    <header class="page-header">
-        <a href="index.html" style="width:15%;"><img src="img/MK_navbar_logo.png" alt="navbar-logo" id="navbar_logo"></a>
-        <nav class="main-navigation page-header__item">
-            <ul role="menubar" class="navigation-list">
-                <li role="presentation">
-                    <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">HOME</a>
-                </li>
-                <li role="presentation">
-                    <a href="about.html" role="menuitem" class="navigation-list__item">ABOUT</a>
-                </li>
-                <li role="presentation">
-                    <a href="work.html" role="menuitem" class="navigation-list__item">WORK</a>
-                </li>
-                <li role="presentation">
-                    <a href="contact.html" role="menuitem" class="navigation-list__item">CONTACT</a>
-                </li>
-
-            </ul>
-        </nav>    
-    </header>
-    <div class="main-logo-container">
-        <img src="img/MK_index_logo.png" alt="main-page-logo" id="main_logo_img">
-    </div>    
-    <footer class="page-footer">
-        <p id="footer-label">Find me on</p>
-        <div class="social-media">
-            <!--Github Icon-->
-            <a href="https://github.com/kurenkov004" target="_blank"><img src="img/764894_github_media_social_square_icon.svg" alt="Github logo"></a>
-            <!--Instagram Icon-->
-            <a href="https://www.instagram.com/maria__kurenkova/" target="_blank"><img src="img/2553090_camera_feed_instagram_media_news_icon.svg" alt="Instagram logo"></a>
-            <!--LinkedIn Icon-->
-            <a href="https://www.linkedin.com/in/masha-kurenkov-90b75013a/" target="_blank"><img src="img/5305157_connection_linkedin_network_linkedin logo_icon.svg" alt="LinkedIn logo"></a>
+<body class="home-body">
+    <nav class="navbar-container">
+        <ul class="navbar">
+            <li role="presentation" class="navbar-item"><a href="index.html" role="menuitem" class="navbar-item-link active">HOME</a></li>
+            <li role="presentation" class="navbar-item"><a href="about.html" role="menuitem" class="navbar-item-link">ABOUT</a></li>
+            <li role="presentation" class="navbar-item"><a href="work.html" role="menuitem" class="navbar-item-link">PROJECTS</a></li>
+            <li role="presentation" class="navbar-item"> <a href="contact.html" role="menuitem" class="navbar-item-link">CONTACT</a></li>
+        </ul>
+    </nav>
+    <div class="page-container">
+        <div class="text-container">
+            <div class="big-text-container">
+                <h1>MARIA KURENKOVA</h1>
+            </div>
+            <div class="sm-text-container">
+                <h3 id="text_small_left">FRONT-END DEVELOPER</h3>
+                <h3 id="text_small_right">BASED IN MASSACHUSETTS, USA</h3>
+            </div>                        
+            <div class="intro-btn-container">
+                <a href="files/Maria-Kurenkova-resume.pdf" class="intro-button"  target="_blank" download>RESUME</a>
+                <a href="about.html" class="intro-button">ABOUT ME</a>
+            </div>
         </div>
-    </footer>
+    </div>
+
 
     <script src="js/tota11y.min.js"></script>
 
